@@ -8,27 +8,44 @@
 
 ## ER図
 
-```
-┌─────────────┐       ┌─────────────┐       ┌─────────────┐
-│    users    │       │   orders    │       │  products   │
-├─────────────┤       ├─────────────┤       ├─────────────┤
-│ PK id       │───┐   │ PK id       │   ┌───│ PK id       │
-│    name     │   │   │ FK user_id  │───┤   │    name     │
-│    email    │   └──>│    status   │   │   │    price    │
-│    password │       │    total    │   │   │    stock    │
-│    role     │       │ created_at  │   │   │ created_at  │
-│ created_at  │       └─────────────┘   │   └─────────────┘
-└─────────────┘               │         │
-                              │         │
-                    ┌─────────┴───────┐ │
-                    │  order_items    │ │
-                    ├─────────────────┤ │
-                    │ PK id           │ │
-                    │ FK order_id     │ │
-                    │ FK product_id   │─┘
-                    │    quantity     │
-                    │    price        │
-                    └─────────────────┘
+```mermaid
+erDiagram
+    users {
+        bigint id PK
+        varchar name
+        varchar email UK
+        varchar password
+        enum role
+        datetime created_at
+    }
+
+    products {
+        bigint id PK
+        varchar name
+        decimal price
+        int stock
+        datetime created_at
+    }
+
+    orders {
+        bigint id PK
+        bigint user_id FK
+        enum status
+        decimal total
+        datetime created_at
+    }
+
+    order_items {
+        bigint id PK
+        bigint order_id FK
+        bigint product_id FK
+        int quantity
+        decimal price
+    }
+
+    users ||--o{ orders : "places"
+    orders ||--|{ order_items : "contains"
+    products ||--o{ order_items : "included_in"
 ```
 
 ---
