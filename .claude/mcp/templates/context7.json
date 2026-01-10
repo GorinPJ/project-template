@@ -1,0 +1,18 @@
+{
+  "name": "context7",
+  "description": "最新ライブラリ・フレームワークのドキュメント取得",
+  "command": "npx",
+  "args": ["--yes", "@upstash/context7-mcp"],
+  "env": {
+    "CONTEXT7_API_KEY": "your-api-key"
+  },
+  "tools": [
+    "resolve-library-id",
+    "get-library-docs"
+  ],
+  "setup": [
+    "1. https://context7.com/dashboard でAPIキーを取得（無料）",
+    "2. 環境変数に設定",
+    "3. 使用例: 「Next.jsの最新ドキュメントを確認して use context7」"
+  ]
+}

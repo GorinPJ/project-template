@@ -1,0 +1,30 @@
+{
+  "name": "mcp-atlassian",
+  "description": "Confluence/Jira連携",
+  "command": "uvx",
+  "args": ["mcp-atlassian"],
+  "env": {
+    "CONFLUENCE_URL": "https://your-domain.atlassian.net/wiki",
+    "CONFLUENCE_USERNAME": "your-email@example.com",
+    "CONFLUENCE_API_TOKEN": "your-api-token",
+    "JIRA_URL": "https://your-domain.atlassian.net",
+    "JIRA_USERNAME": "your-email@example.com",
+    "JIRA_API_TOKEN": "your-api-token"
+  },
+  "tools": [
+    "confluence_search",
+    "confluence_get_page",
+    "confluence_get_page_children",
+    "confluence_create_page",
+    "confluence_update_page",
+    "jira_get_issue",
+    "jira_search_issues",
+    "jira_create_issue",
+    "jira_update_issue"
+  ],
+  "setup": [
+    "1. Atlassian アカウントでAPIトークンを作成",
+    "2. https://id.atlassian.com/manage-profile/security/api-tokens",
+    "3. 環境変数に設定"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mcp-slack",
+  "description": "Slack連携（メッセージ送受信）",
+  "command": "npx",
+  "args": ["--yes", "@modelcontextprotocol/server-slack"],
+  "env": {
+    "SLACK_BOT_TOKEN": "xoxb-your-bot-token",
+    "SLACK_TEAM_ID": "T00000000"
+  },
+  "tools": [
+    "list_channels",
+    "post_message",
+    "reply_to_thread",
+    "get_channel_history",
+    "search_messages"
+  ],
+  "setup": [
+    "1. Slack App を作成（api.slack.com/apps）",
+    "2. Bot Token Scopes を設定（channels:read, chat:write, etc.）",
+    "3. ワークスペースにインストール",
+    "4. Bot Token を環境変数に設定"
+  ]
+}

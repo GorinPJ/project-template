@@ -1,0 +1,18 @@
+{
+  "name": "excel-mcp-server",
+  "description": "Excelファイルの読み書き",
+  "command": "npx",
+  "args": ["--yes", "@negokaz/excel-mcp-server"],
+  "env": {
+    "EXCEL_MCP_PAGING_CELLS_LIMIT": "4000"
+  },
+  "tools": [
+    "read_excel",
+    "write_excel"
+  ],
+  "setup": [
+    "1. Node.js >= 18 が必要",
+    "2. 追加の認証設定は不要",
+    "3. EXCEL_MCP_PAGING_CELLS_LIMIT で1回の読み込みセル数を制限"
+  ]
+}

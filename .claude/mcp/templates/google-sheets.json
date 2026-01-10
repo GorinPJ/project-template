@@ -1,0 +1,22 @@
+{
+  "name": "mcp-google-sheets",
+  "description": "Googleスプレッドシート操作",
+  "command": "uvx",
+  "args": ["mcp-google-sheets@latest"],
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/credentials.json"
+  },
+  "tools": [
+    "list_spreadsheets",
+    "create_spreadsheet",
+    "get_spreadsheet",
+    "update_cells",
+    "append_rows"
+  ],
+  "setup": [
+    "1. Google Cloud Console でプロジェクト作成",
+    "2. Google Sheets API を有効化",
+    "3. サービスアカウントを作成し、JSONキーをダウンロード",
+    "4. GOOGLE_APPLICATION_CREDENTIALS にパスを設定"
+  ]
+}

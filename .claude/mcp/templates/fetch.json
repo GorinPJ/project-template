@@ -1,0 +1,15 @@
+{
+  "name": "mcp-fetch",
+  "description": "Webページ取得・スクレイピング",
+  "command": "uvx",
+  "args": ["mcp-server-fetch"],
+  "env": {},
+  "tools": [
+    "fetch"
+  ],
+  "setup": [
+    "1. Python 3.10以上が必要",
+    "2. uvx がインストールされていること",
+    "3. 追加の認証設定は不要"
+  ]
+}

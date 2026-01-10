@@ -1,0 +1,21 @@
+{
+  "name": "mcp-puppeteer",
+  "description": "ブラウザ自動操作・スクリーンショット",
+  "command": "npx",
+  "args": ["--yes", "@modelcontextprotocol/server-puppeteer"],
+  "env": {},
+  "tools": [
+    "puppeteer_navigate",
+    "puppeteer_screenshot",
+    "puppeteer_click",
+    "puppeteer_fill",
+    "puppeteer_select",
+    "puppeteer_hover",
+    "puppeteer_evaluate"
+  ],
+  "setup": [
+    "1. Node.js >= 18 が必要",
+    "2. Chromium が自動でダウンロードされる",
+    "3. ヘッドレスモードで動作（GUI不要）"
+  ]
+}

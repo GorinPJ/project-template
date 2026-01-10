@@ -1,0 +1,20 @@
+{
+  "name": "mcp-google-drive",
+  "description": "Googleドライブ操作",
+  "command": "npx",
+  "args": ["--yes", "@anthropic/mcp-google-drive"],
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/credentials.json"
+  },
+  "tools": [
+    "search_files",
+    "read_file",
+    "list_folder"
+  ],
+  "setup": [
+    "1. Google Cloud Console でプロジェクト作成",
+    "2. Google Drive API を有効化",
+    "3. OAuth 2.0 認証情報を作成",
+    "4. credentials.json をダウンロードしパスを設定"
+  ]
+}

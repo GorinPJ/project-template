@@ -1,0 +1,23 @@
+{
+  "name": "mcp-mysql",
+  "description": "MySQLデータベース操作",
+  "command": "npx",
+  "args": ["--yes", "@benborber/mcp-server-mysql"],
+  "env": {
+    "MYSQL_HOST": "localhost",
+    "MYSQL_PORT": "3306",
+    "MYSQL_USER": "user",
+    "MYSQL_PASSWORD": "password",
+    "MYSQL_DATABASE": "database"
+  },
+  "tools": [
+    "mysql_query",
+    "list_tables",
+    "describe_table"
+  ],
+  "setup": [
+    "1. 環境変数で接続情報を設定",
+    "2. 読み取り専用ユーザーの使用を推奨",
+    "3. 本番環境への接続は十分注意"
+  ]
+}

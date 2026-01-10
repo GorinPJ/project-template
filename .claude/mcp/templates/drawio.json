@@ -1,0 +1,19 @@
+{
+  "name": "drawio",
+  "description": "図の作成・編集",
+  "command": "npx",
+  "args": ["--yes", "@anthropic/mcp-drawio"],
+  "env": {},
+  "tools": [
+    "new_diagram",
+    "add_nodes",
+    "link_nodes",
+    "get_diagram_info",
+    "edit_nodes",
+    "remove_nodes"
+  ],
+  "setup": [
+    "1. 追加の設定は不要",
+    "2. .drawio.svg 形式でダイアグラムを作成"
+  ]
+}

@@ -1,0 +1,83 @@
+# プロジェクト設定ファイル
+# /new-project コマンドで自動生成されます
+
+# ===========================================
+# プロジェクト基本情報
+# ===========================================
+project:
+  name: ""                    # プロジェクト名
+  type: ""                    # web-app / api / batch / library / poc / other
+  created_at: ""              # 作成日時
+  template_version: "1.1.0"   # 使用したテンプレートバージョン
+
+# ===========================================
+# 技術スタック
+# ===========================================
+stack:
+  architecture: ""            # spa-api / ssr / traditional / static / api-only
+  language: ""                # nodejs / php / python / java / go / ruby
+  framework: ""               # react / vue / next / laravel / spring 等
+  database: ""                # postgresql / mysql / mongodb / sqlite / none
+
+# ===========================================
+# 設定ステータス
+# ===========================================
+# 各項目のステータス:
+#   - pending: 未設定
+#   - skipped: スキップ（不要/後で設定）
+#   - completed: 設定完了
+#   - in_progress: 設定中
+
+setup:
+  # 仕様決定フェーズ
+  requirements:
+    status: pending
+    completed_at: null
+
+  # プロジェクト固有設定
+  project_settings:
+    status: pending
+    completed_at: null
+    coding_standards: false
+    test_conventions: false
+    git_rules: false
+
+  # 環境構築
+  docker:
+    status: pending
+    completed_at: null
+    services: []              # app, web, db, redis 等
+
+  # CI/CD設定
+  ci_cd:
+    status: pending
+    completed_at: null
+    tool: ""                  # github-actions / gitlab-ci / jenkins
+    workflows: []             # ci, build, deploy
+
+  # セキュリティ設定
+  security:
+    status: pending
+    completed_at: null
+    level: ""                 # basic / standard / detailed
+
+  # Confluence連携
+  confluence:
+    status: pending
+    completed_at: null
+    space_key: ""
+    space_name: ""
+
+# ===========================================
+# 生成済みファイル
+# ===========================================
+generated_files:
+  docker: []
+  ci_cd: []
+  security: []
+  docs: []
+
+# ===========================================
+# 備考
+# ===========================================
+notes: ""

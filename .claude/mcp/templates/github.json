@@ -1,0 +1,24 @@
+{
+  "name": "mcp-github",
+  "description": "GitHub連携（PR、Issue管理）",
+  "command": "npx",
+  "args": ["--yes", "@modelcontextprotocol/server-github"],
+  "env": {
+    "GITHUB_PERSONAL_ACCESS_TOKEN": "your-github-token"
+  },
+  "tools": [
+    "search_repositories",
+    "get_file_contents",
+    "create_or_update_file",
+    "push_files",
+    "create_issue",
+    "create_pull_request",
+    "list_issues",
+    "list_pull_requests"
+  ],
+  "setup": [
+    "1. GitHub Settings > Developer settings > Personal access tokens",
+    "2. 必要なスコープ: repo, read:org",
+    "3. トークンを環境変数に設定"
+  ]
+}

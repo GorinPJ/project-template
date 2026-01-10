@@ -1,0 +1,17 @@
+{
+  "name": "mcp-postgres",
+  "description": "PostgreSQLデータベース操作",
+  "command": "npx",
+  "args": ["--yes", "@modelcontextprotocol/server-postgres", "postgresql://user:password@localhost:5432/database"],
+  "env": {},
+  "tools": [
+    "query",
+    "list_tables",
+    "describe_table"
+  ],
+  "setup": [
+    "1. args に接続文字列を指定",
+    "2. 形式: postgresql://user:password@host:port/database",
+    "3. 読み取り専用ユーザーの使用を推奨"
+  ]
+}
