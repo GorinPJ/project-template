@@ -12,12 +12,13 @@
 | work-history-recorder | `/agent-meta-history` | 作業履歴の記録・整理 |
 | template-manager | `/agent-meta-template` | テンプレートのバージョン管理・プロジェクト間同期 |
 
-### Document（ドキュメント）- 2エージェント
+### Document（ドキュメント）- 3エージェント
 
 | エージェント | コマンド | 説明 |
 |------------|---------|------|
 | doc-manager | `/agent-doc-manager` | ドキュメント作成・更新・整合性チェック |
 | data-manager | `/agent-doc-data` | データ定義・スキーマ管理・マスタデータ管理 |
+| spec-advisor | `/agent-doc-spec` | 要件定義・仕様固め・仕様レビュー |
 
 ### Development（開発）- 3エージェント
 
@@ -83,7 +84,8 @@
 │   └── template-manager.md
 ├── document/
 │   ├── doc-manager.md
-│   └── data-manager.md
+│   ├── data-manager.md
+│   └── spec-advisor.md
 ├── development/
 │   ├── code-developer.md
 │   ├── refactoring-advisor.md
